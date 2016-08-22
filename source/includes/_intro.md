@@ -1,46 +1,30 @@
-# Whispir Mobile API
+# Whispir Information Hub API
 
 > API Availability
 
-> > The Whispir Mobile API will soon be launching for invite-only usage in mid-2016.  
+> > The Whispir Information Hub API will soon be launching GA in November 2016.
 
-> > Please [contact us](https://whispir.io/contact) to register your interest and we'll let you know when it's available.
+> > The swagger definition for this API can be found [here](https://whispirinfohub.herokuapp.com/docs).
 
-Built by developers, for developers, Whispir is the place where you can easily build communications into your app – SMS, email, push, voice, chat, web, social, & rich messages.
+Whispir's Information Hub is the first of three major product releases that rapidly increase the speed of communictions within your business.
 
-The Whispir Mobile API provides the facility for applications to be notified and never miss a message with important communications pushed straight to your applications.
+The Information Hub API allows users to create a personalised information management area within the Whispir Platform, where information sources can be configured to drive communications.
 
-* Create a secure mobile inbox within your application for fast access to your secure messages
-* Create powerful, effective communications within your applications with Whispir Rich Messaging
-* Securely access your organisations address book, and connect with the right people at the right time using instant in-app chat messaging
+* Set up information feeds (RSS, XML, JSON) to be checked on a regular schedule and drive workflows when new information is available.
+* Create dynamic endpoints and insert data in your existing format, then use this information directly in your communications.
+* Dynamically invoke workflows within the Whispir Platform, using Whispir Events, Rich Messages and Portals to round out your effective communications experience.
 
-See a video of the API in action here:
-<p style="text-align: center">
-<iframe src="https://player.vimeo.com/video/121110485?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</p>
+## Source Management API
 
-The Whispir Mobile API provides developers with:
+The Whispir Source/Feed API gives developers the ability to:
 
-### Mobile Inbox API
+* Plug in existing information sources hosted at HTTP or FTP locations.
+* Pull information in RSS, JSON or XML format
+* Push documents into the source in JSON format
+* Store the retrieved information in our search engine for retrieval
+* Execute workflows on new information being inserted
 
-The Whispir Mobile Inbox API gives developers the ability to:
-
-* Create a native, rich communications inbox  directly within any application.
-* Receive text based, or Rich Push Notifications sent from the Whispir Platform API with ease.
-* Send message status back to the Whispir Platform to keep the business owners informed of who has received messages.
-
-### Mobile Chat API
-
-The Whispir Mobile Chat API provides developers with all the tools require to build an organisational chat capability directly in any application:
-
-* Access an organisation address book to create chats with users
-* Pivot into chat from any message to allow customers or staff members to chat with HQ
-* Share text based chat or images without worrying about storage, replication or backups - Whispir manages it all for you
-
-### API Core Features
+## API Core Features
 
 - Restful JSON API over HTTPS (TLS 1.2)
 - Authenticated using JWT (via `auth` and `renew` endpoints)
-- Multiple device registration methods (invite-only, self-registration, background registration)
-- Out of the box support for device registration limits per contact
-- Push to SMS Escalation on non-delivery provided by Whispir Platform API
